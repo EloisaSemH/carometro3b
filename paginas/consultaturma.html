@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Turma</title>
+        <link href="../css/css.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        <div class="corpo">
+            <form name="verturma" action="consultaturma.php" method="post" enctype="multipart/form-data">
+
+                <div class="form">
+                    <label>Selecione a turma:</label><br/>
+                    <select name="turma">
+                        <option value="1">Turma 1</option>
+                        <option value="2">Turma 2</option>
+                        <option value="3">Turma 3</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label>Quantidade de colunas:</label><br/>
+                    <input type="number" max="20" name="coluna"/>                                  
+                </div>
+
+                <div class="form">
+                    <input type="submit" value="Consultar" id="consultar" name="consultar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
